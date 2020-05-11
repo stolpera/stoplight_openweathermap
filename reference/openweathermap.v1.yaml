@@ -13,7 +13,15 @@ servers:
     description: prod
   - url: ''
     description: ''
-paths: {}
+paths:
+  /weather:
+    get:
+      summary: weather
+      tags:
+        - Weather endpoints
+      responses: {}
+      operationId: get-weather
+    parameters: []
 components:
   schemas: {}
   securitySchemes:
